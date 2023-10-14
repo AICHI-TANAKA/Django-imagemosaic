@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block contents %}    
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% if form.upload_field %}
+            <p>空ではありません。</p>
+        {% else %}
+            <p>空です</p>
+        {% endif %}
+        {{ form.upload_field }}
+        <input type="submit"></input>
+    </form>
+{% endblock %}

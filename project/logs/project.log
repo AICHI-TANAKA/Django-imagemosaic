@@ -1,0 +1,3230 @@
+2023-10-09 09:39:30,908
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-09 10:13:43,025
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: "static'css/styles.css"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'static'css/styles.css'. Did you forget to register or load this tag?
+2023-10-09 10:13:43,053
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:14:44,469
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: "static'css/styles.css'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'static'css/styles.css''. Did you forget to register or load this tag?
+2023-10-09 10:14:44,485
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:14:44,586
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:14:44,587
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:15:18,247
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:15:18,276
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:15:18,459
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:15:18,460
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:16:05,848
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:16:05,884
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:16:05,944
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:16:05,945
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:17:48,389
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:18:22,196
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:18:22,220
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:18:22,355
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:18:22,357
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:18:34,971
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:18:34,995
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:18:35,078
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:18:35,079
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:21:27,747
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:21:27,769
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:21:27,910
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:21:27,910
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:21:31,980
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:23:32,583
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:23:32,618
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:23:32,738
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:23:32,738
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:23:41,854
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:23:41,879
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:23:41,978
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:23:41,978
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:23:54,606
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:23:54,637
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:23:54,725
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:23:54,732
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:24:12,688
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:24:12,710
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:24:12,796
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:24:12,796
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:24:29,733
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:24:29,766
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:24:29,856
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:24:29,857
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:26:52,387
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:26:52,425
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:26:52,562
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:26:52,562
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:27:06,152
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:27:06,179
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:27:06,268
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:27:06,269
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:27:35,496
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:27:35,527
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:27:35,639
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 10:27:35,640
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 10:37:41,173
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-09 10:37:41,918
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-09 10:44:13,209
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-09 10:44:13,944
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-09 10:49:23,697
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-09 10:49:24,526
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-09 11:48:52,830
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-09 11:50:39,132
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-09 11:50:39,778
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-09 11:51:09,882
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-09 11:51:10,598
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-09 11:51:35,549
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-09 11:51:36,224
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-09 11:56:12,503
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-09 11:56:13,226
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-09 12:00:08,852
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-09 12:00:09,615
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-09 12:14:26,041
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-09 12:14:26,797
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-09 12:16:52,486
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-09 12:16:53,179
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-09 12:22:43,936
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-09 12:22:44,655
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-09 12:23:19,902
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 12:23:19,994
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 12:23:20,072
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-09 12:23:20,073
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-09 12:28:41,405
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-09 12:28:42,109
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 11:22:52,870
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 11:22:54,555
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 11:32:29,738
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 11:32:30,616
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 11:47:21,771
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 11:47:22,097
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 11:47:22,245
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 11:47:22,257
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 11:47:38,151
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 11:47:38,163
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 11:47:38,206
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:13:34,935
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 12:14:26,639
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:14:26,639
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:14:26,639
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:14:26,639
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:14:26,639
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:14:26,649
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:14:26,651
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:14:26,652
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:14:56,491
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:14:56,491
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:14:56,493
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:14:56,494
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:14:56,498
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:14:56,499
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:14:56,499
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:14:56,503
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:15:51,424
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 12:16:00,474
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:16:00,475
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:16:00,476
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:16:00,478
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:16:00,479
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:16:00,481
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:16:00,482
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:16:00,484
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:16:16,341
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:16:16,342
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:16:16,342
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:16:16,344
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:16:16,345
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:16:16,347
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:16:16,349
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:16:16,351
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:192)
+2023-10-14 12:20:08,344
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:20:08,458
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:20:08,529
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:20:08,530
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:20:51,074
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:20:51,120
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:20:51,134
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:21:42,674
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:21:42,712
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:21:42,850
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:21:42,881
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:21:42,883
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:21:51,552
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:21:51,584
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:21:51,679
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:21:51,707
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:21:51,709
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:22:00,673
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:22:00,697
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:22:00,791
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:22:00,821
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:22:00,822
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:22:00,846
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:22:00,870
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:22:00,989
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:22:01,025
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:22:01,026
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:17,893
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:17,939
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:18,030
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:18,096
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:23:18,099
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:40,142
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:40,169
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:40,256
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:40,286
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:23:40,288
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:50,025
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:50,053
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:50,118
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:50,155
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:23:50,157
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:52,709
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:52,729
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:52,738
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:57,738
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:23:57,762
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:24:05,586
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:24:05,615
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:24:05,624
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:24:37,063
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:24:37,093
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:24:37,233
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:24:37,264
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:24:37,266
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:24:45,362
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:27:46,477
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:27:46,503
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:27:46,708
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:27:46,792
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:27:46,794
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:28:27,544
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:28:27,676
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:28:31,643
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:28:31,695
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:28:31,707
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:28:45,251
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:28:45,282
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:28:45,451
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:28:45,519
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:28:45,520
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:30:55,160
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:30:55,302
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:31:01,169
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:31:01,294
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:31:01,334
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:31:39,655
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:31:39,698
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:31:39,826
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:31:39,914
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:31:39,915
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:32:04,814
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:32:04,849
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:32:05,005
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:32:05,075
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:32:05,077
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:32:10,899
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:32:10,925
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:32:11,015
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:32:11,091
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:32:11,092
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:32:30,489
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:32:30,530
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:32:30,653
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:32:30,747
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:32:30,749
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:33:17,754
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:33:17,784
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:33:17,924
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:33:17,989
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:33:17,992
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:36:15,468
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:36:15,508
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:36:16,407
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:36:16,408
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:36:53,724
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:36:53,734
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:36:55,915
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:36:55,932
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:37:01,090
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:37:01,129
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:39:04,824
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:39:04,851
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:39:05,004
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:39:05,032
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:39:05,033
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:39:19,899
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:39:19,926
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:39:20,025
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:39:20,054
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:39:20,056
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:39:29,768
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:39:29,798
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:39:29,905
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:39:29,932
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:39:29,934
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:39:45,627
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:40:59,913
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 12:41:00,548
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 12:41:01,342
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:41:01,373
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:41:01,537
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:41:01,608
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:41:01,610
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:41:47,673
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:41:47,700
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:41:47,842
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:41:47,934
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:41:47,936
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:42:14,518
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:42:14,577
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:42:14,674
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:42:14,789
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:42:14,791
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:42:26,757
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:42:26,785
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:42:26,865
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:42:26,935
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:42:26,937
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:44:02,134
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 12:44:02,807
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 12:44:23,815
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: index.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\html.py", line 420, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+                                           ^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\forms\boundfield.py", line 34, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\forms\boundfield.py", line 107, in as_widget
+    return widget.render(
+           ^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\forms\widgets.py", line 281, in render
+    return self._render(self.template_name, context, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\forms\widgets.py", line 286, in _render
+    return mark_safe(renderer.render(template_name, context))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\forms\renderers.py", line 28, in render
+    template = self.get_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\forms\renderers.py", line 34, in get_template
+    return self.engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\backends\django.py", line 35, in get_template
+    reraise(exc, self)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: index.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    return render(request, 'upload_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: index.html
+2023-10-14 12:44:23,853
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:44:24,094
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:44:24,096
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:45:55,265
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 12:45:56,033
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 12:45:56,764
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:45:56,895
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:45:56,959
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:45:57,014
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:45:57,016
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:48:00,768
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:48:00,887
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:48:00,901
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:48:02,216
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:48:02,241
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:48:09,437
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:48:09,569
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:48:09,575
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,020
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,051
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,191
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,221
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,316
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,336
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,346
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:50:22,348
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:81)
+2023-10-14 12:50:22,360
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,436
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,464
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:50:22,465
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,480
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,501
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,573
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,600
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:50:22,603
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,604
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,624
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,703
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:22,731
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:50:22,732
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:46,156
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:46,180
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:46,250
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:46,277
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:50:46,279
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:48,394
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:48,420
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:48,520
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:50:48,548
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:50:48,550
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:32,787
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 12:52:33,474
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 12:52:36,831
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:36,857
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:36,991
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:37,025
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:52:37,027
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:42,488
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:42,513
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:42,648
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:42,680
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:52:42,682
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:42,904
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:42,931
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:43,028
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:43,054
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:52:43,056
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:43,190
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:43,215
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:43,308
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:43,334
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:52:43,336
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:44,782
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:44,817
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:44,906
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:44,934
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:52:44,936
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:45,132
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:45,161
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:45,260
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:45,286
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:52:45,287
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:45,454
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:45,493
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:45,600
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:45,634
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:52:45,636
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:45,821
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:45,856
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:45,867
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:46,119
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:46,141
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:46,243
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:46,274
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:52:46,275
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:46,737
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:46,768
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:46,777
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:47,307
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:47,341
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:47,447
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:47,476
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:52:47,478
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:47,839
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:47,866
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:48,007
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:48,037
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:52:48,039
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:48,311
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:48,348
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:48,431
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:48,458
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:52:48,459
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:48,712
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:48,734
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:48,828
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:48,855
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:52:48,856
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:58,495
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:58,522
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:58,629
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:52:58,656
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:52:58,657
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:53:02,187
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:53:02,203
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:53:08,226
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:53:08,258
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:53:13,967
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:53:14,097
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:53:14,110
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:54:11,286
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    return render(request, 'upload_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 5: 'cache'. Looking for one of: endcache.
+2023-10-14 12:54:11,323
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:54:11,478
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:54:11,480
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:54:44,678
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    return render(request, 'upload_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 5: 'cache'. Looking for one of: endcache.
+2023-10-14 12:54:44,710
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:54:44,803
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:54:44,804
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:55:02,407
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    return render(request, 'upload_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 5: 'cache'. Looking for one of: endcache.
+2023-10-14 12:55:02,438
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:55:02,530
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:55:02,532
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:20,883
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:20,908
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:21,107
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:21,135
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:56:21,137
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:24,010
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:24,034
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:24,121
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:24,149
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:56:24,150
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:24,716
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:24,745
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:24,837
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:24,864
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:56:24,866
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:51,833
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:51,860
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:51,949
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:51,976
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:56:51,977
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:52,248
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:52,274
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:52,352
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:52,381
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:56:52,382
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:57,208
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:57,238
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:57,324
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:57,361
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:56:57,362
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:57,516
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:57,549
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:57,664
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:56:57,694
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:56:57,695
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:57:39,269
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 12:57:41,874
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:57:41,907
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:57:41,916
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:58:37,116
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:58:37,139
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:58:37,277
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:58:37,306
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:58:37,307
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:59:09,279
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'form.upload_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    return render(request, 'upload_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 29: 'form.upload_field', expected 'endblock'. Did you forget to register or load this tag?
+2023-10-14 12:59:09,318
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:59:09,422
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:59:09,423
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:59:15,952
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:59:15,974
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:59:16,124
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:59:16,154
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 12:59:16,156
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:59:17,799
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:59:17,801
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:59:17,826
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 12:59:49,803
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 12:59:50,546
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:00:06,565
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:00:06,601
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:00:06,736
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:00:06,751
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:00:06,782
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:00:06,783
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:00:44,140
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:00:44,151
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:00:44,357
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:00:44,369
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:00:44,396
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:00:44,398
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:00:59,947
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:01:02,440
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:01:02,474
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:01:02,560
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:01:02,577
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:01:02,607
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:01:02,610
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:01:26,666
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:11,999
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:12,037
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:12,222
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:12,239
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:12,312
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:02:12,314
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:28,202
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:28,231
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:28,247
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:28,267
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:45,292
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:02:46,012
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:02:46,655
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:46,691
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:46,793
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:46,885
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:46,947
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:02:46,948
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:55,888
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:02:57,275
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:57,311
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:57,398
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:57,421
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:02:57,584
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:02:57,585
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:03:57,057
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:03:57,084
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:03:57,307
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:03:57,320
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:03:57,393
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:03:57,394
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:04:02,687
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:04:05,168
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:04:05,206
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:04:05,236
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:04:05,258
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:04:11,163
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:04:11,165
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:04:21,249
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:04:21,277
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:04:21,293
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:04:21,316
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:06:44,194
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:06:44,232
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:06:44,441
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:06:44,463
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:06:44,533
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:06:44,534
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:08:04,851
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:08:04,878
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:08:05,061
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:08:05,108
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:08:05,223
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:08:05,225
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:08:42,925
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:08:46,171
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:08:46,172
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:08:50,222
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:08:50,276
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:08:50,285
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:08:50,301
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:09:36,717
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:09:37,321
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:09:59,060
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:09:59,073
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:09:59,217
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:09:59,247
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:09:59,248
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:10:20,411
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:10:20,432
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:10:20,441
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:15:52,159
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:15:52,187
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:15:52,390
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:15:52,420
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:15:52,420
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:17:28,454
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:17:31,690
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:17:31,715
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:17:31,877
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:17:31,908
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:17:31,909
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:17:35,906
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:17:35,915
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:17:37,249
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:17:37,250
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:17:45,940
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:17:45,958
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: inquiry.html
+2023-10-14 13:17:45,976
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:18:01,466
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:18:01,590
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:18:01,603
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:18:05,761
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:18:05,786
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:18:05,797
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:18:06,151
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:18:06,167
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:18:06,179
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:18:06,618
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:18:06,642
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:18:06,650
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:19:14,690
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:19:14,716
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:19:14,902
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:19:14,934
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:19:14,935
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:19:16,763
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:19:16,790
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:19:16,876
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:19:16,904
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:19:16,905
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:20:18,513
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:20:22,542
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:20:22,591
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:20:22,729
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:20:22,783
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:20:22,784
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:22:36,905
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:22:37,615
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:22:47,669
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:22:47,696
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:22:47,829
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:22:47,856
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:22:47,857
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:24:37,202
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:24:37,824
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:24:44,777
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:24:44,801
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:24:45,007
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:24:45,039
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:24:45,040
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:27:47,542
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:27:47,565
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:27:47,752
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:27:47,791
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:27:47,793
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:30:41,145
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:30:41,782
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:31:00,856
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:31:01,552
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:34:27,689
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:34:27,689
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:34:27,854
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:34:27,855
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:35:10,552
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:35:11,186
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:35:47,789
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:35:48,395
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:36:01,273
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:36:01,947
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:37:45,233
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:37:45,233
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:37:45,308
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:37:45,316
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:38:04,337
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:38:04,344
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:38:04,421
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:38:04,423
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:38:08,949
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:38:08,956
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:38:09,730
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:38:09,737
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:38:14,885
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:38:15,820
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:38:15,820
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:38:15,908
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:38:15,910
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:38:30,861
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:38:30,881
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:38:32,518
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:38:32,519
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:38:38,194
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:38:38,202
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:38:39,070
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:38:39,081
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:40:16,073
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:40:16,080
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:40:16,152
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:40:16,154
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:40:37,309
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:40:37,946
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:40:39,330
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:40:39,330
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:40:39,437
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:40:39,439
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:41:13,639
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:41:17,814
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:41:17,814
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:41:17,985
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:41:17,986
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:41:40,011
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:41:40,026
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:41:40,112
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:41:40,119
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:42:06,888
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:42:06,912
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:42:07,004
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:42:07,004
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:46:42,077
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:46:43,498
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+Traceback (most recent call last):
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\works\DjangoSample\project\app\views.py", line 24, in get
+    has_file_field = 'my_file_field' in form.upload_field  # フォームに指定のフィールドが存在するかチェック
+                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'UploadForm' object has no attribute 'upload_field'
+2023-10-14 13:46:43,513
+[ERROR]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:46:43,709
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:46:43,711
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:48:08,539
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:48:09,324
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:48:11,551
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:48:11,588
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:48:11,803
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:48:11,857
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:48:11,857
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:48:47,750
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:48:48,444
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:49:15,328
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:49:16,104
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:49:26,192
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:49:26,231
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:49:26,411
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:49:26,462
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:49:26,472
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:50:31,368
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:50:31,410
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:50:31,636
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:50:31,698
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:50:31,699
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:50:44,940
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:50:46,451
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:50:46,486
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:50:46,583
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:50:46,621
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:50:46,623
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:50:57,959
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:50:58,052
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:50:58,148
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:50:58,207
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:50:58,212
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:53:40,797
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:53:40,836
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:53:41,016
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:53:41,083
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:53:41,086
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:54:08,108
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:54:08,949
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:54:19,725
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:54:20,707
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:54:21,117
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:54:21,161
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:54:21,319
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:54:21,359
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:54:21,359
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:54:29,745
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:54:30,490
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:55:35,333
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:55:35,377
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:55:35,610
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:55:35,659
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:55:35,667
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:11,578
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 13:56:12,482
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:56:13,092
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:13,125
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:13,311
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:13,359
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:56:13,359
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:14,682
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:14,715
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:14,829
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:14,864
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:14,896
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:15,003
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:15,047
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:15,091
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:15,204
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:15,289
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:15,346
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:15,419
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:15,574
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:56:15,668
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:56:15,673
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:58:29,487
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 13:58:32,016
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:58:32,060
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:58:32,199
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 13:58:32,256
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 13:58:32,264
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
