@@ -3228,3 +3228,189 @@ C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Lin
 2023-10-14 13:58:32,264
 [WARNING]
 C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:07:46,354
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 14:07:47,842
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:07:47,887
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:07:48,552
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 14:07:48,552
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:10:00,393
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:10:00,429
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:10:00,875
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 14:10:00,881
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:11:27,666
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 14:11:27,669
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:11:32,436
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:11:32,572
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:16:09,601
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:16:09,641
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:16:10,272
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 14:16:10,273
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:23:50,173
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:23:50,205
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:23:50,502
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:23:50,552
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:23:50,723
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:23:50,783
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:23:51,132
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 14:23:51,133
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:24:50,386
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 14:24:51,223
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 14:24:55,295
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:24:55,362
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:24:55,817
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 14:24:55,821
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:25:21,277
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 14:25:22,104
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 14:26:17,206
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 14:26:17,997
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 14:26:36,608
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:26:36,645
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:26:36,870
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 14:26:36,880
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:26:37,310
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:26:37,350
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:26:37,496
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:26:37,534
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:26:37,882
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:26:37,934
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:26:38,042
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:26:38,135
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:26:38,344
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\log.py(Line:241)
+2023-10-14 14:26:38,347
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:26:43,009
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:26:43,046
+[WARNING]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\core\servers\basehttp.py(Line:212)
+2023-10-14 14:28:10,216
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 14:28:11,015
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 14:28:23,215
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 14:28:23,959
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 14:28:26,484
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 14:28:27,299
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 14:30:16,002
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 14:30:16,857
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 14:30:25,663
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:266)
+2023-10-14 14:30:26,427
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
+2023-10-14 14:36:33,467
+[INFO]
+C:\works\DjangoSample\DjangoSample_env\Lib\site-packages\django\utils\autoreload.py(Line:668)
