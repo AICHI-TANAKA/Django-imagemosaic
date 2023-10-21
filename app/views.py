@@ -5,13 +5,10 @@ from django.views import View
 from django.http import HttpResponse
 from .forms import UploadForm  # 自分のフォームのインポート
 from .models import UploadedFile
-import logging
-logger = logging.getLogger(__name__)
 
 # Create your views here.
 class IndexView(generic.TemplateView):
     template_name = "index.html"
-
 
 class InquiryView(generic.FormView):
     template_name = "inquiry.html"
@@ -21,7 +18,7 @@ class UploadView(generic.FormView):
     def get(self, request):
         # フォームのインスタンスを作成してテンプレートをレンダリング
         form = UploadForm()
-        return render(request, 'upload_form.html', {'form': form})
+        return render(request, 'upload_form.html', {'testform': form})
 
     def post(self, request):
         # POSTリクエストを処理

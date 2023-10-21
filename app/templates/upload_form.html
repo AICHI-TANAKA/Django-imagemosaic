@@ -12,12 +12,10 @@
 {% endblock %}
 
 {% block contents %}
-    {% if widget.value %}
-    <ul>
-        {% for file in widget.value %}
-            <li>{{ file.name }}</li>
-        {% endfor %}
-    </ul>
-    {% endif %}
-    {{ form.document.label }}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ testform.document.label }}
+    {{ testform.document }}
+    <input type="submit" value="アップロード">
+</form>
 {% endblock%}

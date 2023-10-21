@@ -2,7 +2,7 @@ from django import forms
 from django.conf import settings
 from django.core.files.storage import default_storage
 import os, random, string
-from .multifileinput import MultiFileInput 
+from .multifileinput import MultiFileInput
 
 class InquiryForm(forms.Form):
     name = forms.CharField(label='お名前', max_length=30)
@@ -24,7 +24,7 @@ class InquiryForm(forms.Form):
 class UploadForm(forms.Form):
     """アップロード用フォームの定義"""
     document = forms.FileField(label="画像アップロード",
-        widget=MultiFileInput(), 
+        widget=MultiFileInput(),
         )
 
     def save(self):
