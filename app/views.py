@@ -6,6 +6,7 @@ from django.http import HttpResponse
 from .forms import UploadForm  # 自分のフォームのインポート
 from .models import UploadedFile
 import logging
+logger = logging.getLogger('django')
 
 # Create your views here.
 class IndexView(generic.TemplateView):
@@ -17,8 +18,6 @@ class InquiryView(generic.FormView):
 
 class UploadView(generic.FormView):
     def get(self, request):
-        logger = logging.getLogger('django')
-        logger.info('TEST')
         # フォームのインスタンスを作成してテンプレートをレンダリング
         form = UploadForm()
         return render(request, 'upload_form.html', {'testform': form})
@@ -28,9 +27,7 @@ class UploadView(generic.FormView):
         form = UploadForm(request.POST, request.FILES)
         if form.is_valid():
             # フォームが有効な場合、ファイルを保存
-            for file in request.FILES.getlist('my_file_field'):
-                uploaded_file = UploadedFile(file=file)
-                uploaded_file.save()
+            form.save()
             return HttpResponse('ファイルがアップロードされました。')
         else:
             # フォームが無効な場合、エラーを表示
