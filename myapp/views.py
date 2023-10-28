@@ -5,6 +5,10 @@ from django.views import View
 from django.http import HttpResponse
 from .forms import UploadForm  # 自分のフォームのインポート
 from .models import UploadedFile
+from django.contrib.auth import get_user_model
+from django.contrib.auth.mixins import UserPassesTestMixin
+from django.contrib.auth.views import LoginView, LogoutView
+from .forms import LoginForm
 import logging
 logger = logging.getLogger('django')
 
@@ -37,4 +41,32 @@ class UploadView(generic.FormView):
         else:
             # フォームが無効な場合、エラーを表示
             del file_data_object
-            return render(request, 'upload_form.html', {'form': form})
+            # return render(request, 'upload_form.html', {'form': form, 'upload_err_msg':'アップロードに失敗しました'})
+            return HttpResponse('ファイルがアップロードに失敗しました。フォーム画面に戻ってやり直してください。')
+
+class ImageMosaicView(generic.TemplateView):
+    pass
+
+class Login(LoginView):
+    """ログインページ処理"""
+    template_name = 'login.html'
+    def get(self, request):
+        logger.info('test')
+        form = LoginForm()
+        return render(request, 'login.html', {'form':form})
+
+class Logout(LogoutView):
+    """ログアウトページ処理"""
+    template_name = 'logout_done.html'
+
+class OnlyYouMixin(UserPassesTestMixin):
+    """自分しかアクセスできないようにするMixin(My Pageのため)"""
+    raise_exception = True
+
+    def test_func(self):
+        user = self.request.user
+        return user.pk == self.kwargs['pk']
+
+class MyPage(OnlyYouMixin, generic.DetailView):
+    model = get_user_model()
+    template_name = 'my_page.html'

@@ -184,3 +184,6 @@ LOGGING = {
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+LOGIN_URL = 'myapp:login' # ログインのURLの設定
+LOGIN_REDIRECT_URL = 'myapp:index' #ログインが完了した後に遷移するURL

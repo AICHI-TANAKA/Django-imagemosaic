@@ -3,6 +3,8 @@ from django.conf import settings
 from django.core.files.storage import default_storage
 import os, random, string
 from .multifileinput import MultiFileInput
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth import get_user_model
 
 class InquiryForm(forms.Form):
     name = forms.CharField(label='お名前', max_length=30)
@@ -37,3 +39,13 @@ class UploadForm(forms.Form):
         """一時フォルダ名生成関数"""
         return 'image\\' + ''.join(random.choices(string.ascii_letters + string.digits, k=n))
 
+
+User = get_user_model()
+class LoginForm(AuthenticationForm):
+    """ログイン用フォーム"""
+    # bootstrap4対応
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field in self.fields.values():
+            field.widget.attrs['class'] = 'form-control'
+            field.widget.attrs['placeholder'] = field.label  # placeholderにフィールドのラベルを入れる
