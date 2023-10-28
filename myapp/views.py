@@ -27,7 +27,7 @@ class UploadView(generic.FormView):
         form = UploadForm(request.POST, request.FILES)
         
         if form.is_valid():
-            # フォームが有効な場合、ファイルを保存
+            # フォームが有効な場合、ファイルを保存(現在未使用)
             # form.save()
             # ファイル情報をDB(sqlite)に保存
             for file in request.FILES.getlist('document'):

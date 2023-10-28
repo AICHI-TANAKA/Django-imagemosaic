@@ -23,11 +23,10 @@ class InquiryForm(forms.Form):
 
 class UploadForm(forms.Form):
     """アップロード用フォームの定義"""
-    document = forms.FileField(label="画像アップロード",
-        widget=MultiFileInput(),
-        )
+    document = forms.FileField(label="画像アップロード", widget=MultiFileInput(),)
 
     def save(self):
+        """ファイル保存関数（現在未使用）"""
         upload_files = self.files.getlist('document')
         temp_dir = os.path.join(settings.MEDIA_ROOT, self.create_dir(10))   #一時フォルダの生成
         for image in upload_files:
