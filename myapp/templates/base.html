@@ -36,6 +36,9 @@
                     <a class="nav-link" href="{% url 'myapp:my_page' user.pk %}">My page</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{% url 'myapp:upload' user.pk %}">Upload</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="{% url 'myapp:logout' %}">Log out</a>
                 </li>
               {% endif %}
@@ -50,6 +53,14 @@
           こんにちは！ {{ user.username }} さん
         {% endif %}
     </div>
+
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
 
     {% block header %}{% endblock %}
     {% block contents %}
