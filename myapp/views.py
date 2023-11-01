@@ -16,7 +16,7 @@ import logging
 logger = logging.getLogger('django')
 
 class OnlyYouMixin(UserPassesTestMixin):
-    """自分しかアクセスできないようにするMixin(My Pageのため)"""
+    """自分しかアクセスできないようにするMixin"""
     raise_exception = True
     # requestとURL上のuser_idを比較
     def test_func(self):
@@ -32,6 +32,7 @@ class InquiryView(generic.FormView):
     form_class = InquiryForm
 
 class UploadView(OnlyYouMixin, generic.DetailView):
+    """画像アップロードページ"""
     def get(self, request, pk):
         """GETリクエストを処理"""
         logger.info("user_id::::"+str(pk))
@@ -39,7 +40,7 @@ class UploadView(OnlyYouMixin, generic.DetailView):
         form = UploadForm()
         return render(request, 'upload_form.html', {'testform': form})
 
-    def post(self, request):
+    def post(self, request, pk):
         """POSTリクエストを処理"""
         form = UploadForm(request.POST, request.FILES)
         
@@ -48,18 +49,17 @@ class UploadView(OnlyYouMixin, generic.DetailView):
             # form.save()
             # ファイル情報をDB(sqlite)に保存
             for file in request.FILES.getlist('document'):
-                file_data_object = UploadedFile(file=file,user_id=1) #user_idは仮で1とする
+                file_data_object = UploadedFile(file=file,user_id=pk) 
                 file_data_object.save()
             # return HttpResponse('ファイルがアップロードされました。')
             messages.success(request, 'ファイルが正常にアップロードされました')
             return redirect('/')
-
         else:
             # フォームが無効な場合、エラーを表示
             del file_data_object
             # return render(request, 'upload_form.html', {'form': form, 'upload_err_msg':'アップロードに失敗しました'})
             # return HttpResponse('ファイルがアップロードに失敗しました。フォーム画面に戻ってやり直してください。')
-            messages.success(request, 'ファイルのアップロードに失敗しました。もう一度やり直してください。')
+            messages.error(request, 'ファイルのアップロードに失敗しました。もう一度やり直してください。')
             return redirect('/upload')
 
 class ImageMosaicView(generic.TemplateView):
@@ -78,5 +78,6 @@ class Logout(LogoutView):
     template_name = 'logout_done.html'
 
 class MyPage(OnlyYouMixin, generic.DetailView):
+    """ユーザー専用ページ"""
     model = get_user_model()
     template_name = 'my_page.html'
