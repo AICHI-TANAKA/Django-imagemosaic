@@ -63,6 +63,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
+                'django.template.context_processors.media',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -187,3 +188,10 @@ MEDIA_URL = '/media/'
 
 LOGIN_URL = 'myapp:login' # ログインのURLの設定
 LOGIN_REDIRECT_URL = 'myapp:index' #ログインが完了した後に遷移するURL
+
+# staticフォルダのURLパスを設定
+STATIC_URL = '/static/'
+# staticフォルダの場所を設定
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static/')]
+# デプロイ用に静的ファイルを収集するディレクトリを指定（開発環境では不要）
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
