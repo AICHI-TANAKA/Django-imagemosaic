@@ -12,7 +12,7 @@
 {% endblock %}
 
 {% block contents %}
-画像アップロードフォーム
+<!-- 画像アップロードフォーム -->
 <form action="./" method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ testform.document.label }}
@@ -20,12 +20,18 @@
     <input type="submit" value="アップロード">
 </form>
 
+{% for file_obj in file_obj_list %}
 <form action="{% url 'myapp:facemosaic' %}" method="post">
     {% csrf_token %}
-    <img src="{{ image1_path }}" style="width:300px; height:200px;"/>
-    <input type="hidden" name="user_id" value="{{ user.id }}">
-    <input type="hidden" name="image_id" value="8">
-    <input type="submit" value="画像加工">
+    <img src="{{ file_obj.file.url }}" style="width:300px; height:200px;"/>
+    <input type="hidden" name="user_id" value="{{ file_obj.user_id }}">
+    <input type="hidden" name="image_id" value="{{ file_obj.image_id }}">
+    <input type="submit" value="顔モザイク⇒">
+    {% if file_obj.file_mosafter %}
+    <img src="{{ file_obj.file_mosafter.url }}" style="width:300px; height:200px;"/>
+    {% endif %}
 </form>
+
+{% endfor %}
 
 {% endblock%}

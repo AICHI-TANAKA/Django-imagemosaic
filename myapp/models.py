@@ -4,11 +4,11 @@ from .common_def.common import create_dir
 # Create your models here.
 class UploadedFile(models.Model):
     """アップロードファイルの情報を格納するテーブル"""
-    file = models.FileField(upload_to='mosbefore/'+create_dir(10)+"/")   #一時フォルダの生成
+    file = models.FileField(upload_to='mosbefore/'+create_dir(10)+"/")   #djangoの仕様上、ファイルパスとして絶対パスを格納できない
+    file_mosafter = models.FileField(null=True)
     user_id = models.IntegerField(null=False)
     image_id = models.IntegerField(null=False)
     uploaded_at = models.DateTimeField(auto_now_add=True)
-
     
     def save(self, *args, **kwargs):
         if not self.image_id:

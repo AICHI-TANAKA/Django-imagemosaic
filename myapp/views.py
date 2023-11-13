@@ -5,6 +5,7 @@ from django.views import View
 from django.http import HttpResponse
 from .forms import UploadForm  # 自分のフォームのインポート
 from .models import UploadedFile
+# from django.db.models import F
 from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import UserPassesTestMixin
 from django.contrib.auth.views import LoginView, LogoutView
@@ -42,11 +43,15 @@ class UploadView(OnlyYouMixin, generic.DetailView):
         logger.info("user_id::::"+str(pk))
         # フォームのインスタンスを作成してテンプレートをレンダリング
         form = UploadForm()
-
+        
         # 表示画像のパスを渡す
-        file_entity = UploadedFile.objects.filter(user_id=pk, image_id=8)
-        image_path = '/media/'+str(file_entity[0].file)
-        return render(request, 'upload_form.html', {'testform': form, 'image1_path': image_path})
+        file_entity = UploadedFile.objects.filter(user_id=pk)
+        # # ここでファイルパスを修正 Djangoの仕様上仕方ない
+        # file_path_list = []
+
+        logger.info("file_obj_test:::::" + str(len(file_entity)))
+
+        return render(request, 'upload_form.html', {'testform': form, 'file_obj_list': file_entity})
 
     def post(self, request, pk):
         """POSTリクエストを処理"""
@@ -92,17 +97,17 @@ class MyPage(OnlyYouMixin, generic.DetailView):
 
 def imagemosaic(request):
     """リクエストを受け付け、画像のモザイク処理を実行"""
-    # 加工前ファイル格納先パス取得
-    file_entity = UploadedFile.objects.filter(user_id=request.POST.get("user_id"), image_id=request.POST.get("image_id"))
-    # file_entity = UploadedFile.objects.filter(user_id=3, image_id=1)
-    logger.info(file_entity[0].user_id)
-    before_path = str(MEDIA_ROOT).replace('\\','/') +'/'+ str(file_entity[0].file)
+    # 対象ファイルデータのEntitiyを取得
+    file_entity = UploadedFile.objects.get(user_id=request.POST.get("user_id"), image_id=request.POST.get("image_id"))
+    
     # 加工後ファイル格納先パス
+    before_path = str(MEDIA_ROOT).replace('\\','/') +'/'+ str(file_entity.file)
     after_path = before_path.replace('before', 'after')
 
-    # 一応ログ残す
-    logger.info('after_path:::'+after_path)
-    logger.info('before_path:::'+before_path)
+
+    # # 一応ログ残す
+    # logger.info('after_path:::'+after_path)
+    # logger.info('before_path:::'+before_path)
 
     # after_pathのディレクトリを再帰的に作成
     after_path_splited = after_path.split('/')[:-1]
@@ -112,4 +117,13 @@ def imagemosaic(request):
 
     # モザイク処理実行
     imageMosaic(before_path, after_path)
+
+    # 加工後ファイル保存先パスをDBに保存
+    try:
+        file_entity.file_mosafter = after_path
+        file_entity.save()
+    except:
+        import traceback
+        logger.exception(traceback.print_exc())
+
     return redirect('/upload/'+request.POST.get("user_id"))
