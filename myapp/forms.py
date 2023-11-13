@@ -27,17 +27,23 @@ class UploadForm(forms.Form):
     """アップロード用フォームの定義"""
     document = forms.FileField(label="画像アップロード", widget=MultiFileInput(),)
 
-    def save(self):
-        """ファイル保存関数（現在未使用）"""
-        upload_files = self.files.getlist('document')
-        temp_dir = os.path.join(settings.MEDIA_ROOT, self.create_dir(10))   #一時フォルダの生成
-        for image in upload_files:
-            default_storage.save(os.path.join(temp_dir, image.name), image)   #一時フォルダに画像を保存
-        return temp_dir
+    # def save(self):
+    #     """ファイル保存関数（現在未使用）"""
+    #     upload_files = self.files.getlist('document')
+    #     temp_dir = os.path.join(settings.MEDIA_ROOT, self.create_dir(10))   #一時フォルダの生成
+    #     for image in upload_files:
+    #         default_storage.save(os.path.join(temp_dir, image.name), image)   #一時フォルダに画像を保存
+    #     return temp_dir
     
     def create_dir(self, n):
         """一時フォルダ名生成関数"""
         return 'image\\' + ''.join(random.choices(string.ascii_letters + string.digits, k=n))
+
+
+# class ImageViewForm(forms.Form):
+#     """画像表示フォーム（画像加工のトリガー）"""
+#     def __init__(self, *args, **kwargs):
+#         super(ImageViewForm, self).__init__(*args, **kwargs)
 
 
 User = get_user_model()
